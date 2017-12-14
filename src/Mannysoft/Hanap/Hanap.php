@@ -22,6 +22,6 @@ class Hanap {
 
     public function search()
     {
-        return 'search'
+        return 'search';
     }
 }
