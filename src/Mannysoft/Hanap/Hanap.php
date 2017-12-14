@@ -10,9 +10,9 @@ class Hanap {
         //$this->client = new Client;
     }
 
-    public function filter($request)
+    public function filter()
     {
-        
+        return 'filter';
     }
 
     public function sort($request)
@@ -20,8 +20,8 @@ class Hanap {
         
     }
 
-    public function search($request)
+    public function search()
     {
-        
+        return 'search'
     }
 }
