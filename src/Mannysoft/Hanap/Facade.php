@@ -4,7 +4,7 @@ namespace Mannysoft\Hanap;
 
 use Illuminate\Support\Facades\Facade;
 
-class HanapFacade extends Facade {
+class Facade extends Facade {
     /**
      * Return facade accessor
      * @return string
