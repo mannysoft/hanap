@@ -31,5 +31,6 @@
                 "Hanap": "Mannysoft\\Hanap\\Facade"
             }
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
