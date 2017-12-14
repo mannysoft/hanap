@@ -2,9 +2,9 @@
 
 if (!function_exists('hanap')) {
     /**
-     * Get the Debugbar instance
+     * Get the Hanap instance
      *
-     * @return \Barryvdh\Debugbar\LaravelDebugbar
+     * @return \Mannysoft\Hanap\Hanap
      */
     function hanap()
     {
