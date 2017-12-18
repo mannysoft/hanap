@@ -2,19 +2,13 @@
 
 namespace Mannysoft\Hanap;
 
-use Nicolaslopezj\Searchable\SearchableTrait;
 use Sofa\Eloquence\Eloquence;
 
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Query\Expression;
-use Config;
 use DB;
-use Illuminate\Support\Str;
 
 
 trait FilterTrait
 {
-    use SearchableTrait;
     use Eloquence;
     
     public function scopeFilter($query)
@@ -83,15 +77,14 @@ trait FilterTrait
         }
     }
 
-    // public function scopeSearch($query)
-    // {
-    //     if ( ! request('q') ) {
-    //         return;
-    //     }
+    public function scopeSearchRecord($query)
+    {
+        if ( ! request('q') ) {
+            return;
+        }
 
-    //     dd(request()->only('q'));
-    //     //return $query->where('id');
-    // }
+        return $query->search(request('q'));
+    }
 
     private function getColumns()
     {
