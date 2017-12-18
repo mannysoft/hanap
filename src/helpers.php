@@ -16,6 +16,6 @@ if (!function_exists('search')) {
     
     function search()
     {
-        hanap()->search();
+        return hanap()->search();
     }
 }

@@ -17,6 +17,7 @@ class ServiceProvider extends BaseServiceProvider {
         $this->publishes([
             __DIR__ . '/../../config/hanap.php' => config_path('hanap.php'),
         ]);
+        
         $this->mergeConfigFrom(
             __DIR__ . '/../../config/hanap.php', 'hanap'
         );
