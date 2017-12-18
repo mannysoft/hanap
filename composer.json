@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "php": ">=7.0.0"
+        "php": ">=7.0.0",
+        "nicolaslopezj/searchable": "1.*"
     },
     "autoload": {
         "psr-0": {
