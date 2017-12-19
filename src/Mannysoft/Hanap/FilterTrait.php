@@ -86,6 +86,7 @@ trait FilterTrait
         return $query->search(request('q'));
     }
 
+   
     private function getColumns()
     {
         return DB::connection()->getSchemaBuilder()->getColumnListing($this->table);

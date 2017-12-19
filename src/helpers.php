@@ -19,3 +19,11 @@ if (!function_exists('search')) {
         return hanap()->search();
     }
 }
+
+if (!function_exists('show_fields')) {
+    
+    function show_fields($array)
+    {
+        return hanap()->showFields($array);
+    }
+}
