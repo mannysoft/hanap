@@ -23,7 +23,7 @@ use Mannysoft\Hanap\FilterScope;
 
 class Team extends Model
 {
-	use FilterTrait;
+    use FilterTrait;
 
     protected $fillable = ['name'];
 
