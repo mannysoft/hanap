@@ -55,4 +55,5 @@ $teams = Team::all();
 ```
 ```php
 GET /teams?status=active
+GET /teams?sort=-name,created_at - Retrieves a list of teams in descending order of name. Within a specific name, older teams are ordered first
 ```
