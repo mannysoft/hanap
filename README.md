@@ -83,3 +83,17 @@ class TeamResource extends Resource
     }
 }
 ```
+```json
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Dream Team"
+        },
+        {
+            "id": 2,
+            "name": "Team 1"
+        }
+    ]
+}
+```
