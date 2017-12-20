@@ -53,3 +53,6 @@ Now you can use in your model.
 // Will automatically run the filters, sorts and search
 $teams = Team::all();
 ```
+```php
+GET /teams?status=active
+```
