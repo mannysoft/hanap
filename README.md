@@ -54,6 +54,7 @@ Now you can use in your model.
 $teams = Team::all();
 ```
 ```php
-GET /teams?status=active
-GET /teams?sort=-name,created_at - Retrieves a list of teams in descending order of name. Within a specific name, older teams are ordered first
+GET /teams?status=active // Get active teams
+GET /teams?sort=-name,created_at // Retrieves a list of teams in descending order of name. Within a specific name, older teams are ordered first
+GET /teams?q=manny // Retrieves data mentioning the word 'manny'
 ```
