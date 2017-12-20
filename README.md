@@ -59,3 +59,27 @@ GET /teams?sort=-name,created_at // Retrieves a list of teams in descending orde
 GET /teams?q=manny // Retrieves data mentioning the word 'manny'
 GET /teams?fields=id,name // Retrieves fields 'id' and 'name'
 ```
+```php
+namespace App\Http\Resources;
+
+use Illuminate\Http\Resources\Json\Resource;
+
+class TeamResource extends Resource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    public function toArray($request)
+    {
+        return show_fields([
+            'id' => $this->id,
+            'name' => $this->name,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
+        ]);
+    }
+}
+```
