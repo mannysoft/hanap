@@ -47,3 +47,9 @@ class Team extends Model
     }
 }
 ```
+Now you can use in your model.
+
+```php
+// Will automatically run the filters, sorts and search
+$teams = Team::all();
+```
