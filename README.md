@@ -10,3 +10,5 @@ composer require mannysoft/hanap
 ```
 
 Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
+
+## Usage
